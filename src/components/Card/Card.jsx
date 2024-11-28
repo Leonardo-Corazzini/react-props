@@ -3,8 +3,8 @@ import Button from "../button/button"
 import style from "./Card.module.css"
 
 
-function Card({ post }) {
-    const { title, image, content, tags } = post;
+function Card({ props }) {
+    const { title, image, content, tags } = props;
     console.log(tags)
 
     return (
@@ -17,7 +17,7 @@ function Card({ post }) {
 
 
                 <div className={style.tagSection}> {tags.map(tag =>
-                    <span className={tag}>{tag}</span>
+                    <span key={tag} className={tag}>{tag}</span>
                 )}
                 </div>
 

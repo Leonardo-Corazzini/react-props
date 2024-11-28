@@ -9,7 +9,7 @@ function Main() {
                     {
                         posts.map((post) =>
                             post.published && <div key={post.id} className="col-6">
-                                <Card post={post} />
+                                <Card props={post} />
                             </div>
                         )
 
