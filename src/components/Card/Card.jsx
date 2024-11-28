@@ -4,7 +4,7 @@ import style from "./Card.module.css"
 
 
 function Card({ post }) {
-    const { published, title, image, content, tags } = post;
+    const { title, image, content, tags } = post;
     console.log(tags)
 
     return (
