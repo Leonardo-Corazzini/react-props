@@ -19,10 +19,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -10px;
 }
 
-.col-4 {
+.col-6 {
   width: calc(100% / 12 * 6);
+  padding: 10px;
 }
 
 /* style */

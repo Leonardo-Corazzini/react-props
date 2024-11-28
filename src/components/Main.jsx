@@ -1,11 +1,16 @@
-import Card from "./card/card"
+import Card from "./Card/Card"
+import posts from "../posts"
 function Main() {
     return <main>
         <div className="container">
             <div className="row">
-                <div className="col-4">
-                    <Card />
-                </div>
+                {posts.map((post) =>
+                    <div key={post.id} className="col-6">
+                        <Card title={post.title} image={post.image} content={post.content} published={post.published} />
+                    </div>
+                )
+
+                }
 
             </div>
 
