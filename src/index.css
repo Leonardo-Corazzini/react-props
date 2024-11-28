@@ -1,0 +1,50 @@
+/* reset rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 6);
+}
+
+/* style */
+body {
+  background-color: rgb(243, 241, 240);
+}
+
+header {
+  background-color: rgb(233, 230, 229);
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(73, 72, 72);
+  padding: 30px 50px;
+}
+
+.footer-description {
+  color: white;
+  text-align: center;
+}
