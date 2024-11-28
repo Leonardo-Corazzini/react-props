@@ -6,7 +6,7 @@ function Main() {
             <div className="row">
                 {posts.map((post) =>
                     <div key={post.id} className="col-6">
-                        <Card title={post.title} image={post.image} content={post.content} published={post.published} />
+                        <Card title={post.title} tags={post.tags} image={post.image} content={post.content} published={post.published} />
                     </div>
                 )
 
