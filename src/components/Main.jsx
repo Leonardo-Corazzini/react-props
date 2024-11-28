@@ -1,21 +1,25 @@
 import Card from "./Card/Card"
 import posts from "../posts"
-function Main() {
-    return <main>
-        <div className="container">
-            <div className="row">
-                {posts.map((post) =>
-                    <div key={post.id} className="col-6">
-                        <Card title={post.title} tags={post.tags} image={post.image} content={post.content} published={post.published} />
-                    </div>
-                )
 
-                }
+function Main() {
+    return (
+        <main>
+            <div className="container">
+                <div className="row">
+                    {
+                        posts.map((post) =>
+                            post.published && <div key={post.id} className="col-6">
+                                <Card post={post} />
+                            </div>
+                        )
+
+                    }
+
+                </div>
 
             </div>
-
-        </div>
-    </main>
+        </main>
+    )
 }
 
 
