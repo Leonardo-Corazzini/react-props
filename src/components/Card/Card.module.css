@@ -38,3 +38,19 @@
     flex-wrap: wrap;
     gap: 5px;
 }
+
+.html {
+    color: green;
+}
+
+.css {
+    color: pink;
+}
+
+.js {
+    color: orange;
+}
+
+.php {
+    color: bisque;
+}

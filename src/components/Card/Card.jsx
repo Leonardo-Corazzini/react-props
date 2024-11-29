@@ -17,7 +17,7 @@ function Card({ props }) {
 
 
                 <div className={style.tagSection}> {tags.map(tag =>
-                    <span key={tag} className={tag}>{tag}</span>
+                    <span key={tag} className={style[tag]}>{tag}</span>
                 )}
                 </div>
 
